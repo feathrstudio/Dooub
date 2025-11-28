@@ -12,20 +12,20 @@ const TechLeadershipGraphic: React.FC = () => (
     <div className="absolute w-20 h-20 border border-neutral-700/80 rounded-full" />
     
     {/* Radial Lines */}
-    <svg className="absolute inset-0 w-full h-full text-green-500/20 pointer-events-none">
+    <svg className="absolute inset-0 w-full h-full text-[#01C853]/20 pointer-events-none">
        <line x1="50%" y1="50%" x2="20%" y2="20%" stroke="currentColor" strokeWidth="1" />
        <line x1="50%" y1="50%" x2="80%" y2="20%" stroke="currentColor" strokeWidth="1" />
-       <circle cx="20%" cy="20%" r="2" fill="#4ade80" />
-       <circle cx="80%" cy="20%" r="2" fill="#4ade80" />
+       <circle cx="20%" cy="20%" r="2" fill="#01C853" />
+       <circle cx="80%" cy="20%" r="2" fill="#01C853" />
     </svg>
 
     {/* Center Node */}
-    <div className="relative z-10 w-12 h-12 bg-neutral-900 border border-green-500/50 rounded-lg flex items-center justify-center shadow-[0_0_20px_rgba(34,197,94,0.3)]">
-        <div className="w-5 h-5 bg-green-500 rounded-sm shadow-[0_0_10px_#22c55e]" />
+    <div className="relative z-10 w-12 h-12 bg-neutral-900 border border-[#01C853]/50 rounded-lg flex items-center justify-center shadow-[0_0_20px_rgba(1,200,83,0.3)]">
+        <div className="w-5 h-5 bg-[#01C853] rounded-sm shadow-[0_0_10px_#01C853]" />
     </div>
 
     {/* Badge */}
-    <div className="absolute bottom-4 bg-green-900/20 border border-green-500/30 px-3 py-1 rounded text-[10px] text-green-400 font-medium tracking-wider">
+    <div className="absolute bottom-4 bg-[#01C853]/20 border border-[#01C853]/30 px-3 py-1 rounded text-[10px] text-[#01C853] font-medium tracking-wider">
       VERSION 4.0 ACTIVE
     </div>
   </div>
@@ -53,10 +53,10 @@ const CostEfficiencyGraphic: React.FC = () => (
 
     {/* New Stack */}
     <div className="flex flex-col justify-end h-[142px] items-center">
-      <div className="relative w-12 h-7 bg-green-900/10 border border-green-500 rounded-sm flex items-center justify-center shadow-[0_0_15px_rgba(34,197,94,0.15)]">
-        <span className="text-xs font-bold text-green-400">1/4</span>
+      <div className="relative w-12 h-7 bg-[#01C853]/10 border border-[#01C853] rounded-sm flex items-center justify-center shadow-[0_0_15px_rgba(1,200,83,0.15)]">
+        <span className="text-xs font-bold text-[#01C853]">1/4</span>
       </div>
-      <span className="text-[10px] text-green-500 mt-2">New</span>
+      <span className="text-[10px] text-[#01C853] mt-2">New</span>
     </div>
 
   </div>
@@ -87,26 +87,26 @@ const GlobalScaleGraphic: React.FC = () => (
         <path 
             d="M 50 140 Q 150 60, 250 60" 
             fill="none" 
-            stroke="#22c55e" 
+            stroke="#01C853" 
             strokeWidth="1.5" 
             strokeDasharray="3 3" 
             opacity="0.6" 
         />
         
         {/* Start Dot on Trajectory */}
-        <circle cx="50" cy="140" r="2" fill="#4ade80" />
+        <circle cx="50" cy="140" r="2" fill="#01C853" />
         
         {/* Mid Dot */}
-        <circle cx="150" cy="80" r="2" fill="#4ade80" />
+        <circle cx="150" cy="80" r="2" fill="#01C853" />
         
         {/* End Dot */}
-        <circle cx="250" cy="60" r="2" fill="#4ade80" />
+        <circle cx="250" cy="60" r="2" fill="#01C853" />
      </svg>
 
      {/* Label - moved down to avoid overlap */}
      <div className="absolute top-[82%] left-[16.6%] -translate-y-1/2 flex items-center gap-2">
-        <div className="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.8)]" />
-        <span className="text-[10px] text-green-400 font-mono tracking-widest uppercase shadow-black drop-shadow-md">REGION: AUTO</span>
+        <div className="w-2 h-2 rounded-full bg-[#01C853] shadow-[0_0_5px_rgba(1,200,83,0.8)]" />
+        <span className="text-[10px] text-[#01C853] font-mono tracking-widest uppercase shadow-black drop-shadow-md">REGION: AUTO</span>
      </div>
   </div>
 );
@@ -115,14 +115,14 @@ const GlobalScaleGraphic: React.FC = () => (
 const AIIndependenceGraphic: React.FC = () => (
   <div className="relative w-full h-full flex items-center justify-center">
     {/* Badge */}
-    <div className="absolute top-4 left-4 px-2 py-0.5 border border-green-800 bg-green-900/10 rounded text-[9px] text-green-400 tracking-wider">
+    <div className="absolute top-4 left-4 px-2 py-0.5 border border-[#01C853]/50 bg-[#01C853]/10 rounded text-[9px] text-[#01C853] tracking-wider">
         HYBRID_MODE
     </div>
 
     {/* Connections */}
     <svg className="absolute inset-0 w-full h-full pointer-events-none z-0">
-        <line x1="30%" y1="65%" x2="50%" y2="50%" stroke="#22c55e" strokeWidth="1" />
-        <line x1="70%" y1="40%" x2="50%" y2="50%" stroke="#22c55e" strokeWidth="1" />
+        <line x1="30%" y1="65%" x2="50%" y2="50%" stroke="#01C853" strokeWidth="1" />
+        <line x1="70%" y1="40%" x2="50%" y2="50%" stroke="#01C853" strokeWidth="1" />
     </svg>
 
     {/* Left Node (Square) */}
@@ -190,8 +190,8 @@ const ProductivityGraphic: React.FC = () => (
   <div className="relative w-full h-full flex flex-col items-center justify-center px-8 gap-4">
     
     {/* Badge */}
-    <div className="absolute top-4 right-4 flex items-center gap-1.5 bg-neutral-900 border border-neutral-800 rounded px-2 py-0.5">
-        <div className="w-1.5 h-1.5 bg-green-500 rounded-full" />
+        <div className="absolute top-4 right-4 flex items-center gap-1.5 bg-neutral-900 border border-neutral-800 rounded px-2 py-0.5">
+        <div className="w-1.5 h-1.5 bg-[#01C853] rounded-full" />
         <span className="text-[8px] text-neutral-300 font-mono font-bold">OPTIMIZED</span>
     </div>
 
@@ -202,18 +202,18 @@ const ProductivityGraphic: React.FC = () => (
     <div className="w-full flex items-center gap-3 opacity-90">
         <div className="text-[9px] font-mono text-neutral-500 w-6">BLD</div>
         <div className="flex-1 h-1.5 bg-neutral-800 rounded-full overflow-hidden">
-            <div className="h-full bg-green-500 w-[92%] rounded-full" />
+            <div className="h-full bg-[#01C853] w-[92%] rounded-full" />
         </div>
-        <div className="text-[9px] font-mono text-green-500 w-6 text-right">92%</div>
+        <div className="text-[9px] font-mono text-[#01C853] w-6 text-right">92%</div>
     </div>
 
     {/* Bar 2 */}
     <div className="w-full flex items-center gap-3 opacity-90">
         <div className="text-[9px] font-mono text-neutral-500 w-6">DEP</div>
         <div className="flex-1 h-1.5 bg-neutral-800 rounded-full overflow-hidden">
-            <div className="h-full bg-green-500 w-[88%] rounded-full" />
+            <div className="h-full bg-[#01C853] w-[88%] rounded-full" />
         </div>
-        <div className="text-[9px] font-mono text-green-500 w-6 text-right">88%</div>
+        <div className="text-[9px] font-mono text-[#01C853] w-6 text-right">88%</div>
     </div>
 
     {/* Bar 3 */}
@@ -238,9 +238,9 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ title, subTitle, description, children }) => {
   return (
-    <div className="group relative bg-neutral-950/50 rounded-2xl border border-neutral-800 hover:border-green-500/30 transition-all duration-500 overflow-hidden flex flex-col h-full">
+    <div className="group relative bg-neutral-950/50 rounded-2xl border border-neutral-800 hover:border-[#01C853]/30 transition-all duration-500 overflow-hidden flex flex-col h-full">
       {/* Card Glow Effect on Hover */}
-      <div className="absolute inset-0 bg-gradient-to-b from-green-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#01C853]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
       
       {/* Graphic Container */}
       <div className="h-48 w-full bg-neutral-900/30 border-b border-neutral-800/50 flex items-center justify-center relative overflow-hidden">
@@ -254,12 +254,12 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, subTitle, description,
       {/* Content */}
       <div className="p-6 flex flex-col flex-grow relative z-10">
         <div className="mb-2">
-            <h3 className="text-lg font-semibold text-white group-hover:text-green-400 transition-colors duration-300">
+            <h3 className="text-xl font-semibold text-white group-hover:text-[#01C853] transition-colors duration-300">
             {title}
             </h3>
-            <h4 className="text-sm font-medium text-green-500/80 mb-1">{subTitle}</h4>
+            <h4 className="text-sm font-medium text-[#01C853]/80 mb-1">{subTitle}</h4>
         </div>
-        <p className="text-sm text-neutral-400 leading-relaxed mt-2">
+        <p className="text-sm md:text-base text-neutral-400 leading-relaxed mt-2">
           {description}
         </p>
       </div>
@@ -358,7 +358,7 @@ export const Value: React.FC = () => {
         </div>
 
         <h2 className="font-bold text-white leading-[1.1] tracking-[-0.005em]" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)' }}>
-            The Standard of<br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">Extreme Efficiency</span>
+            The Standard of<br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#01C853] to-emerald-400">Extreme Efficiency</span>
         </h2>
         <p className="font-normal text-[#A0A7B0] leading-[1.5] tracking-[-0.003em] max-w-[720px] mx-auto" style={{ fontSize: 'clamp(1rem, 1.5vw, 1.25rem)', marginTop: 'clamp(8px, 1vw, 16px)' }}>
             최적화된 기술은 비즈니스의 가장 강력한 경쟁력입니다.<br />

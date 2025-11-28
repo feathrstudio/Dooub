@@ -37,36 +37,37 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-[#01C853] font-medium tracking-widest text-sm md:text-base uppercase mb-6"
+            className="text-[#01C853] font-medium tracking-widest text-xs sm:text-sm md:text-base uppercase mb-3 md:mb-5"
         >
           We build the future
         </motion.p>
         
-        <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight text-white mb-4">
+        <h1 className="text-6xl sm:text-7xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[1.03] md:leading-[1.02] text-white mb-2 md:mb-3">
           Tech that<br />
           understands
         </h1>
         
-        <div className="h-20 md:h-32 flex items-center justify-center overflow-hidden">
-            <AnimatePresence mode="wait">
-                <motion.span
-                    key={words[index]}
-                    initial={{ y: 50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: -50, opacity: 0 }}
-                    transition={{ type: "spring", stiffness: 100, damping: 20 }}
-                    className="text-4xl md:text-7xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01C853] to-emerald-200"
-                >
-                    {words[index]}.
-                </motion.span>
-            </AnimatePresence>
+        {/* Dynamic word */}
+        <div className="mt-1 mb-2 flex justify-center min-h-[3.5rem] sm:min-h-[4.5rem] md:min-h-[5.5rem] lg:min-h-[6.5rem]">
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={words[index]}
+              initial={{ y: 24, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -24, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 120, damping: 18 }}
+              className="inline-block leading-[1.08] text-6xl sm:text-7xl md:text-7xl lg:text-8xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#01C853] to-emerald-200"
+            >
+              {words[index]}.
+            </motion.span>
+          </AnimatePresence>
         </div>
 
         <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="mt-12 text-gray-400 max-w-2xl mx-auto text-lg font-light leading-relaxed"
+            className="mt-6 md:mt-10 text-gray-400 max-w-2xl mx-auto text-base sm:text-lg font-light leading-[1.4] md:leading-[1.6]"
         >
             From games to media, and now to AI. <br className="hidden md:block"/>
             Dooub connects technology with human experience.

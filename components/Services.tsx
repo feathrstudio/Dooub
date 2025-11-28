@@ -44,18 +44,18 @@ export const Services: React.FC = () => {
               transition={{ duration: 0.6 }}
               className="flex items-center gap-5 mb-4"
             >
-              <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-[0_0_20px_rgba(255,77,77,0.4)] flex-shrink-0 bg-[#FF4D4D] p-4 flex items-center justify-center">
+              <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-[0_0_20px_rgba(255,77,77,0.4)] flex-shrink-0 bg-[#FF4D4D] p-2 flex items-center justify-center">
                 <img 
                     src="https://raw.githubusercontent.com/jiyoungpark94/dooubb1.2/main/logo_subsy.svg" 
                     alt="Subsy Logo" 
-                    className="w-full h-full object-contain brightness-0 invert scale-[1.75]"
+                    className="w-full h-full object-contain brightness-0 invert scale-125"
                     onError={(e) => {
                         e.currentTarget.style.display = 'none';
                     }}
                 />
               </div>
               <div>
-                <h3 className="text-3xl font-bold text-white">Subsy</h3>
+                <h3 className="text-3xl md:text-4xl font-bold text-white">Subsy</h3>
                 <p className="text-[#FF4D4D] font-medium tracking-wide">AI Subtitle & Translation Platform</p>
               </div>
             </motion.div>
@@ -110,7 +110,7 @@ export const Services: React.FC = () => {
                     <div className="flex items-center gap-2">
                        <div className="w-3 h-3 rounded-full bg-red-500/50"></div>
                        <div className="w-3 h-3 rounded-full bg-yellow-500/50"></div>
-                       <div className="w-3 h-3 rounded-full bg-green-500/50"></div>
+                       <div className="w-3 h-3 rounded-full bg-[#01C853]/50"></div>
                     </div>
                     <div className="text-xs text-neutral-500 font-mono">Subsy Studio - Project_01.mp4</div>
                     <div className="w-4"></div>
@@ -229,7 +229,7 @@ export const Services: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
-              className="flex items-center gap-5 mb-4 justify-end md:justify-start"
+              className="flex items-center gap-5 mb-4"
             >
               <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-[0_0_20px_rgba(51,181,165,0.4)] flex-shrink-0 bg-[#33B5A5] p-4 flex items-center justify-center">
                 <img 
@@ -242,7 +242,7 @@ export const Services: React.FC = () => {
                 />
               </div>
               <div>
-                <h3 className="text-3xl font-bold text-white">Selectt</h3>
+                <h3 className="text-3xl md:text-4xl font-bold text-white">Selectt</h3>
                 <p className="text-[#33B5A5] font-medium tracking-wide">AI Investment Assistant</p>
               </div>
             </motion.div>

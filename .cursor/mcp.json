@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "TalkToFigma": {
+      "command": "/Users/jiyoungpark/.bun/bin/bunx",
+      "args": [
+        "cursor-talk-to-figma-mcp@latest"
+      ],
+      "cwd": "/Users/jiyoungpark/cursor-talk-to-figma-mcp-main",
+      "env": {
+        "BUN_INSTALL": "/Users/jiyoungpark/.bun",
+        "PATH": "/Users/jiyoungpark/.bun/bin:$PATH"
+      }
+    }
+  }
+}
